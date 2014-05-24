@@ -3,33 +3,34 @@
 @include global-reset;
 
 body {
-  font-family: sans-serif;
+  background: #fcfcfc;
+  margin: 30px;
 }
 
-.img-left-box {
+h1 {
+  border-left: 10px solid blue;
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.border-box {
+  @include border-radius(5px);
   @include clearfix;
-  width: 500px;
+  width: 600px;
+  border: 2px solid #bbbbbb;
+  padding: 20px;
+  background-color: white;
   img {
     float: left;
     margin-right: 20px;
-  }
-  h2 {
-    font-size: 18px;
-    span {
-      font-size: 14px;
-    }
+    border: 1px solid #333333;
   }
   ul {
-    list-style: disc;
     li {
-      margin-bottom: 0.5em;
-      + li {
-        border-top: 1px solid #dddddd;
-      }
+      line-height: 1.7;
+      font-size: 20px;
     }
   }
-}
-
-.red {
-  color: red;
 }
