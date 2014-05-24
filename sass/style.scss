@@ -1,0 +1,35 @@
+@import "compass";
+
+@include global-reset;
+
+body {
+  font-family: sans-serif;
+}
+
+.img-left-box {
+  @include clearfix;
+  width: 500px;
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    span {
+      font-size: 14px;
+    }
+  }
+  ul {
+    list-style: disc;
+    li {
+      margin-bottom: 0.5em;
+      + li {
+        border-top: 1px solid #dddddd;
+      }
+    }
+  }
+}
+
+.red {
+  color: red;
+}
